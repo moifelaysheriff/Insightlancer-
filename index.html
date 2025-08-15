@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Third </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .main-dot{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .dot{
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: black;
+            position: relative;
+            left: 150px;
+            top: 50px;
+        }
+
+        .sub-main1{
+            width: 350px;
+            height: 640px;
+            border-radius: 40px;
+            background-color: white;
+            margin: 10px;
+            margin-top: 150px;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30px;
+        }
+
+        b{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .first{
+            margin-left: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .first input{
+            width: 270px;
+            padding: 12px;
+            border-radius: 12px;
+            border: 0.5px solid rgb(231, 229, 229);
+            transition: 1s;
+        }
+
+        .first input:hover{
+            border: 2px solid orange;
+        }
+
+        #line1{
+            position: relative;
+            width: 130px;
+            height: 3px;
+            background-color: rgb(202, 198, 198);
+        }
+
+        #b{
+            position: relative;
+            bottom: 10px;
+            left: 135px;
+        }
+
+        #line2{
+            position: relative;
+            width: 135px;
+            height: 3px;
+            background-color: rgb(202, 198, 198);
+            bottom: 20px;
+            left: 160px;
+        }
+
+        .first button{
+            width: 295px;
+            padding: 12px;
+            background-color: orange;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .first button a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+
+        #account{
+            margin-left: 40px;
+            font-size: 14px;
+        }
+
+        .sub-main2{
+            width: 350px;
+            height: 665px;
+            border-radius: 40px;
+            background-color: white;
+            margin: 10px;
+            margin-top: 60px;
+        }
+
+        .sub-main3{
+            width: 350px;
+            height: 650px;
+            border-radius: 40px;
+            background-color: white;
+            margin: 10px;
+        }
+
+        .sub-main3 h2{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30px;
+            font-size: 30px;
+        }
+
+        .center{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .sub-center{
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            border: 3px solid orange;
+            margin: 10px;
+            border-radius: 15px;
+        }
+
+        .sub-center b{
+            position: relative;
+            font-size: 25px;
+            color: orange;
+            top: 10px;
+        }
+
+        .sub-main3 button{
+            width: 295px;
+            padding: 12px;
+            background-color: orange;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .sub-main3 button a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+       .main-dot2{
+            display: block;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            top: 250px;
+        }
+
+        .dot2{
+            width: 37px;
+            height: 37px;
+            border-radius: 37px;
+            background-color: black;
+            position: relative;
+            left: 210px;
+        }
+
+        .main-dot2 h3{
+            width: 130px;
+            height: 4px;
+            background-color: rgb(65, 63, 63);
+            margin-left: 150px;
+            margin-top: 7px;
+        }
+
+
+
+
+    </style>
+</head>
+<body style="background-color: rgb(211, 202, 202); background-image: url(moon.png); background-size: cover;">
+    <div class="main">
+        <div class="main-dot">
+            <div class="dot"></div>
+        </div>
+        <br><br><br><br>
+        <div class="sub-main1">
+            <br>
+            <p> <b> 9:41</b> <img src="network pole.png" style="float: right; width: 90px; margin-right: 20px;"> </p>
+            <br><br><br><br><br><br>
+            <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif;"> Register </h2>
+            <br>
+            <div class="first">
+                <b style="font-size: 18px;"> Let's Get Started </b>
+                <br>
+                <label style="font-size: 12px;"> Create an account </label> 
+                <br><br>
+                <b style="font-size: 13px;"> Full name </b>
+                <br>
+                <input type="text" placeholder="Ex. Moifelay M. Sheriff">
+                <br><br>
+                <b style="font-size: 13px;"> Email </b>
+                <br>
+                <input type="text" placeholder="example@gmail.com">
+                <br><br>
+                <h3 id="line1"> </h3> <b id="b"> or </b> <h3 id="line2"> </h3>
+                <br><br>
+                <b style="font-size: 13px;"> Phone number </b>
+                <br>
+                <input type="text" placeholder="+233 Enter Mobile Number">
+                <br><br>
+                <button> <a href=""> Register </a></button>
+                <br><br>
+                <label id="account"> Already have account? </label>
+                <a href="" style="text-decoration: none; color: orange;"> Sign Up </a>
+            </div>
+        </div>
+
+        <div class="sub-main2">
+            <br>
+            <p> <b> 9:41</b> <img src="network pole.png" style="float: right; width: 90px; margin-right: 20px;"> </p>
+            <br><br><br>
+            <img src="Insightlancer.jpg" style="width: 230px; margin-left: 60px;"> <br>
+            <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif;"> Login </h2>
+            <br>
+            <div class="first">
+                <b style="font-size: 18px;"> Let's Get Started </b>
+                <br>
+                <label style="font-size: 12px;"> Create an account </label> 
+                <br><br>
+                <b style="font-size: 13px;"> Email or Mobile </b>
+                <br>
+                <input type="text" placeholder="example@gmail.com">
+                <br><br>
+                <b style="font-size: 13px;"> Password </b>
+                <br>
+                <input type="text" placeholder="***************">
+                <br>
+                <label style="float: right; margin-right: 25px; font-size: 12px;"> Forgot password? </label>
+                <button> <a href=""> Login </a></button>
+                <br><br>
+                <label id="account"> Already have account? </label>
+                <a href="" style="text-decoration: none; color: orange;"> Sign In </a>
+            </div>
+                
+           
+
+        </div>
+
+
+        <div class="sub-main3">
+            <br>
+            <p> <b> 9:41</b> <img src="network pole.png" style="float: right; width: 90px; margin-right: 20px;"> </p>
+            <br><br>
+            <img src="backspace.png" style="width: 20px; margin-left: 30px;">
+            <b style="margin-left: 80px;"> Verification </b>
+            <br><br><br>
+            <h2> Enter your Verification Code </h2>
+            <br>
+            <div class="center">
+                <div class="sub-center"> <b> 5 </b></div>
+                <div class="sub-center"> <b> 3 </b></div>
+                <div class="sub-center"> <b> 0 </b></div>
+                <div class="sub-center"> <b> 1 </b></div>
+            </div>
+            <br>
+            <b style="color: orange; margin-left: 30px;"> 04:59 </b>
+            <br>
+            <p style="width: 260px;">
+                <b style="font-size: 14px; font-family: Arial, Helvetica, sans-serif;"> 
+                We send Verification code to your email <a href="" style="text-decoration: none; color: orange;"> sheriff******@gmail.com </a>.
+                You can check your inbox. </b>
+                <br><br>
+                <a href="" style="color: orange; font-size: 15px;"> I didn't receive the code? Send again </a>
+                <br><br>
+                <button> <a href=""> Verify </a></button>
+            </p>
+            <div class="main-dot2">
+                <div class="dot2"></div>
+                <br><br><br>
+                <h2 style="margin-left: 120px;"> Insightlancer </h2>
+                <h3> </h3>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    
+</body>
+</html>
